@@ -1,0 +1,113 @@
+:root{
+  --space-md: calc(1.25 * var(--space-unit));
+  --size: 50px;
+  --z-index-fixed-element: 10;
+  --color-bg: hsl(0, 0%, 100%);
+  --color-contrast-higher: hsl(204, 28%, 7%);
+  --color-contrast-higher-h: 204;
+  --color-contrast-higher-s: 28%;
+  --color-contrast-higher-l: 7%;
+}
+
+.container-footer {
+  padding: 0 15px;
+}
+
+.footer {
+  background: $light;
+  // background: darken( $light, 1.5);
+  // min-height: 205px;
+  text-align: center;
+  padding-top: 25px;
+  p {
+    font-size: 13px;
+    line-height: 25px;
+    color: $footer-font-color;
+    text-align: center;
+    margin-bottom: 7px;
+    overflow-wrap: break-word;
+  }
+  a {
+    color: lighten( $black, 34.9 );
+  }
+  .footer-menu {
+    padding-bottom: 20px;
+    ul {
+      margin: 0px;
+      padding: 0px;
+      li {
+        display: inline-block;
+        // padding: 0px 20px;
+        a {
+          display: inline-block;
+          color: lighten( $black, 28.6 );
+          &:hover {
+            color: $black;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    a {
+      font-weight: 600;
+    }
+  }
+}
+
+
+.back-top-pistakiavera { 
+  position: absolute; right: 0; bottom: 0; padding: 0 40px; font-size: 25px; 
+
+  @include mobile-xs {
+    .back-top-pistakiavera { padding: 0 20px; font-size: 13px; }
+  }
+
+  @include mobile {
+    .back-top-pistakiavera { padding: 0 20px; font-size: 10px; }
+  }
+  
+  @include tablet {
+    .back-top-pistakiavera { padding: 0 20px; font-size: 17px; }
+  }
+  
+  @include desktop {
+    .back-top-pistakiavera { padding: 0 35px; font-size: 20px; }
+  }
+  
+  @include large-desktop {
+    .back-top-pistakiavera { padding: 0 46px; font-size: 26px; }
+  }
+
+
+}
+
+.back-top-pistakiavera {
+  position: relative;
+  padding: 0 40px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+
+// @include mobile {
+//   .back-top-pistakiavera { position: absolute; right: 0; bottom: 0; padding: 0 20px; font-size: 13px; }
+// }
+
+// @include tablet {
+//   .back-top-pistakiavera { position: absolute; right: 0; bottom: 0; padding: 0 20px; font-size: 15px; }
+// }
+
+// @include desktop {
+//   .back-top-pistakiavera { position: absolute; right: 0; bottom: 0; padding: 0 35px; font-size: 25px; }
+// }
+
+// @include large-desktop {
+//   .back-top-pistakiavera { position: absolute; right: 0; bottom: 0; padding: 0 46px; font-size: 26px; }
+// }
+
+// .back-top-pistakiavera { position: absolute; right: 0; bottom: 0; padding: 0 40px; font-size: 25px; }

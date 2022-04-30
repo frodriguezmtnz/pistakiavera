@@ -1,0 +1,66 @@
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Forum:400);
+
+body {
+  line-height: 1.5;
+  font-family: $font-primary;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+}
+
+h1, h2 { font-family: $h2_texto_pistakiavera; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: $h1;
+
+  @include tablet {
+    font-size: $h1-md;
+  }
+
+  @include mobile {
+    font-size: $h2;
+  }
+
+  @include mobile-xs {
+    font-size: $h2-md;
+  }
+}
+
+h2 {
+  font-size: $h2;
+
+  @include mobile {
+    font-size: $h2-sm;
+  }
+}
+
+h3 {
+  font-size: $h3;
+}
+
+h4 {
+  font-size: $h4;
+}
+
+p {
+  color: darken( $light, 49.41);
+  font-size: 18px;
+  font-family: $font-primary;
+  text-align: justify;
+}

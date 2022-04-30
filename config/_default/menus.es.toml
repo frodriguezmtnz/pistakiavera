@@ -1,0 +1,21 @@
+############# Spanish navigation ##############
+
+[[main]]
+name = "Qué Ofrecemos"
+url = "ofrecemos/"
+weight = 1
+
+[[main]]
+name = "Promociones"
+url = "promociones/"
+weight = 2
+
+[[main]]
+name = "Conócenos"
+url = "conocenos/"
+weight = 3
+
+[[main]]
+name = "Trabajos Realizados"
+url = "trabajos-realizados/"
+weight = 4

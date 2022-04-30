@@ -1,0 +1,66 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<section class="contact-form">
+  <div class="container">
+
+    <div class="row mensaje">
+      <p>Rellena el siguiente formulario, y cuéntanos más en detalle qué es lo que necesitas, para así poder ayudarte a hacerlo realidad.</p> 
+      <p>Respondemos en menos de 24h. Gracias! <i class="fas fa-star"></i></p>
+    </div>
+
+    {{ with site.Params.contact.form }}{{ if .enable -}}
+    <div class="row" id="form-pistakiavera">
+      <form method="POST" {{ if .use_netlify }}name="{{ printf "contact_%s" $.Language.Lang }}" action="{{ "/message_sent" | relLangURL }}" netlify netlify-honeypot="nhp"{{ else }}name="contact" action="{{ .action | safeURL }}"{{ end }}>
+        <div class="col-sm-12">
+          <div class="block">
+            <div class="form-group">
+              <label for="name" hidden>{{ i18n "contact_form_name" }}</label>
+              <input id="name" name="name" type="text" class="form-control" placeholder="{{ i18n "contact_form_name" }}" required>
+            </div>
+            <div class="form-group">
+              <label for="email" hidden>{{ i18n "contact_form_email" }}</label>
+              <input id="email" name="email" type="email" autocomplete="email" class="form-control" placeholder="{{ i18n "contact_form_email" }}" required>
+            </div>
+            <div class="form-group">
+              <label for="subject" hidden>{{ i18n "contact_form_subject" }}</label>
+              <input id="subject" name="subject" type="text" class="form-control" placeholder="{{ i18n "contact_form_subject" }}" required>
+            </div>
+
+            <div class="form-group">
+                <label for="serviciosPistakiavera">Selecciona un Servicio de Pistakiavera</label>
+                <select class="form-control" id="serviciosPistakiavera" required>
+                  <option value="">Selecciona un servicio..</option>
+                  <option value="cumple">Cumpleaños</option>
+                  <option value="friki">Fiestas Frikis</option>
+                  <option value="infantil">Fiestas Infantiles</option>
+                  <option value="escape">Escape Room Personalizado</option>
+                  <option value="pedidas">Pedidas</option>
+                  <option value="aniversario">Aniversario de Bodas</option>
+                  <option value="empresas">Convenciones de Empresas</option>
+                  <option value="custom">A tu medida</option>
+                  <option value="otro">Otro...</option>
+                </select>
+            </div>
+
+            <div class="form-group-2">
+              <label for="message" hidden>{{ i18n "contact_form_message" }}</label>
+              <textarea id="message" name="message" class="form-control" rows="8" placeholder="{{ i18n "contact_form_message" }}" required></textarea>
+            </div>
+            <button class="btn btn-default" type="submit">{{ i18n "submit" }}</button>
+          </div>
+            {{ if .use_netlify -}}
+            <div class="form-group-h">
+              <input name="nhp" type="text" class="form-control" placeholder="Are you made of flesh and bone?">
+            </div>
+            {{- end }}
+          </div>
+        </div>
+      </form>
+    </div>
+    {{- end }}{{ end }}    
+  </div>
+</section>
+
+{{ end }}

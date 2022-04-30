@@ -1,0 +1,24 @@
+{{ define "main" }}
+{{ partial "page-title.html" . }}
+
+{{ with .Params.galeria }}
+  {{ if .habilitado }}
+  <section class="trabajos section">
+
+    <div class="grid-gallery">
+
+      {{ range .trabajo_item }}
+        {{/*  <a class="grid-gallery__item" href="{{ .link_foto | relURL }}" title="{{ .link_title }}">  */}}
+        <div class="grid-gallery__item">
+          <img loading="lazy" src="{{ .imagen_trabajo | relURL }}" class="grid-gallery__image"  alt="{{ .alt_trabajo }}" width="auto" height="auto" />
+        </div>
+        {{/*  </a>  */}}
+      {{ end }} {{/*  range  */}}
+
+    </div>
+
+  </section>
+  {{ end }}
+  
+{{ end }}
+{{ end }}

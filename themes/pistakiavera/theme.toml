@@ -1,0 +1,20 @@
+# theme.toml Pistakiavera Hugo theme
+
+name = "Pistakiavera Hugo theme"
+license = "GPL-3.0 Licencia"
+licenselink = "https://github.com/frodriguezmtnz/pistakiavera/blob/main/LICENSE"
+description = "Pistakiavera, custom theme for Hugo CMS"
+homepage = "https://pistakiavera.es/"
+demosite = "#"
+tags = ["blog",'google-analytics', 'modern', 'minimal', 'minimalistic', 'white', 'light', 'multilingual', "bootstrap", "responsive", "pistakiavera", "gethugothemes"]
+features = ["company", "responsive", "seo-friendly"]
+min_version = "0.96.0"
+
+[author]
+  name = "Pistakiavera (Believe it)"
+  homepage = "https://pistakiavera.es/"
+
+[original]
+  name = "Pistakiavera"
+  homepage = "https://pistakiavera.es/"
+  repo = "https://github.com/frodriguezmtnz/pistakiavera"

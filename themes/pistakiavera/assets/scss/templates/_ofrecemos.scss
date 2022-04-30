@@ -1,0 +1,65 @@
+.row.ofrecemos { margin: 75px 0; }
+.section-ofrecemos { padding: 40px 0; }
+
+// Se aplica SOLO para tablet y moviles
+// ------------------------------------
+@include tablet{
+  a.btn.btn-small.mt-20{ display: grid; justify-items: center; justify-content: center; }
+  h2.mt-0 { margin: 20px 0; text-align: center; }
+  .ofrecemos .row.ofrecemos { margin: 75px 0; }
+}
+
+
+@include mobile {
+  h2.mt-0 { margin: 50px 0; text-align: center; }
+}
+
+@media (max-width: 991px){
+  a.btn.btn-small.mt-20{ display: grid; justify-items: center; justify-content: center; }
+  h2.mt-0 { margin: 20px 0; text-align: center; }
+  .ofrecemos .row.ofrecemos { margin: 75px 0; }
+}
+
+// @media (min-width: 992px) {
+//   .row .no-float {
+//       display: table-cell;
+//       float: none;
+//   }
+// }
+
+
+.ofrecemos{
+  .block{
+    h2 {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin:0;
+    }
+
+    p {
+      padding-top: 0px;
+      line-height:28px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .ofrecemos-img {
+    overflow:hidden;
+
+    &:hover img {
+      transform: scale3D(1.1,1.1,1);
+    }
+
+    img {
+      // opacity: .6;
+      @include transition (all, 0.5s, ease-out);
+    }
+  }
+
+  .section-title {
+    margin-bottom: 0px;
+  }
+}

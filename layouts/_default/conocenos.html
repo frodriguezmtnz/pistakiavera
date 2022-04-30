@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+<section class="conocenos section">
+  <div class="container">
+    <div class="row mensaje about">
+      {{.Content}}      
+    </div>
+  </div>
+
+  <div class="container-grid">
+    <div class="nosotros">
+      <p class="nosotros-nombre">{{ .Params.nosotros_nombre }}</p>
+      <img loading="lazy" class="imagen-nosotros" src="/images/conocenos/conocenos-pistakiavera.jpg" alt="conoce equipo Pistakiavera" />
+    </div>
+    <div class="redes-nosotros">
+      <a href="{{ .Params.red_social_1_url | relURL }}" title="Instagram | Pistakiavera" target="_blank" rel="noopener noreferrer"><i class="fab fa-{{ .Params.red_social_1_nombre }}"></i></a>
+      <a href="mailto:{{ .Params.red_social_2_url }}" title="Email | Pistakiavera" target="_blank" rel="noopener noreferrer"><i class="fas fa-{{ .Params.red_social_2_nombre }}"></i></a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

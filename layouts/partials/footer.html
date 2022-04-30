@@ -1,0 +1,24 @@
+<footer class="footer">
+  <div class="container-footer">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-menu">
+          <ul class="social-icons">
+            {{ range site.Params.social -}}
+              <li>
+                <a href="{{ .enlace | safeURL }}" target="_blank" rel="noopener noreferrer" title="{{ .red_social }}"><i class="fab fa-{{ .icono }}"></i></a>
+              </li>
+            {{- end }}
+          </ul>
+
+        </div>
+        <p class="copyright">{{ site.Params.copyright | markdownify }} <i class="fas fa-heart"></i> + <i class="fas fa-magic"></i></p>
+
+        <div class="back-top-pistakiavera">
+          <a href="#" title="Subir arriba | Pistakiavera"><i class="fas fa-chevron-up"></i></a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</footer>

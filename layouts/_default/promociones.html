@@ -1,0 +1,36 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ with .Params.promociones }}
+{{ if .habilitado }}
+<section class="promociones section">
+
+  {{ range .promociones_item }}
+
+  <div class="container-pistakiavera">
+    <div class="row promociones">
+      <div class="col-md-4">
+        <div class="promociones-img">
+          <img loading="lazy" class="img-responsive" src="{{ .imagen_promociones | relURL }}" width="auto" height="auto" />
+        </div>
+      </div>
+      <div class="col-md-8">
+        {{ with .titulo_promociones }}<h2 class="mt-0">{{ . | markdownify }}</h2>{{ end }}
+        {{ with .texto_promociones }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
+          {{ with .boton_promociones }}
+            {{ if .habilitado }}
+              <a href="{{ .enlace | relURL }}" target="_blank" rel="noopener noreferrer" class="btn btn-small mt-10" title="{{ .titulo }}" >{{ .etiqueta }}</a>
+            {{ end }}
+          {{ end }}
+      </div>
+    </div>
+  </div>
+
+  {{ end }}
+
+</section>
+{{ end }}
+{{ end }}
+
+{{ end }}

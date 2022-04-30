@@ -1,0 +1,107 @@
+// Color Variables
+{{ with site.Params.variables }}
+$color-primary: {{.color_primary | default "#777"}};
+$color-secondary: {{.color_secondary | default "#0AA8A7"}};
+$text-color: {{.text_color | default "#777"}};
+$text-dark: {{.text_dark | default "#222"}};
+$text-light: {{.text_light | default "#999"}};
+$body-bg: {{.body_color | default "#fff"}};
+$border-color: {{.border_color | default "#ECECEC"}};
+$black: {{.black | default "#000"}};
+$white: {{.white | default "#fff"}};
+$light: {{.light | default "#EDF6F5"}};
+
+// Color de fondo de HOME de Pistakiavera - Slider
+$bg_pistakiavera: #e0d9d9;
+$boton_pista_primary: {{.boton_pista_primary | default "#777"}};
+$boton_pista_hover: {{.boton_pista_hover | default "#777"}};
+$footer-font-color: #4D4D4D;
+
+
+// Font Variables
+$font-size: {{.font_size | default "16px"}};
+$font-scale: {{.font_scale | default "1.25"}};
+//$font-primary: '{{replace (replaceRE ":[ital,]*[ital@]*[wght@]*[0-9,;]+" "" .font_primary | default "Lato") "+" " "}}', {{.font_primary_type | default "sans-serif"}};
+$font-primary: '{{replace (replaceRE ":[wght@]*[0-3,;]+" "" .font_primary | default "Lato") "+" " "}}', {{.font_primary_type | default "sans-serif"}};
+//$font-secondary: '{{replace (replaceRE ":[ital,]*[ital@]*[wght@]*[0-9,;]+" "" .font_secondary | default "Lato") "+" " "}}', {{.font_secondary_type | default "sans-serif"}};
+$font-secondary: '{{replace (replaceRE ":[wght@]*[0-9,;]+" "" .font_secondary | default "Lato") "+" " "}}', {{.font_secondary_type | default "sans-serif"}};
+$h2_texto_pistakiavera: {{ .h2_texto_pistakiavera | default "sans-serif" }};
+$font-icon: '{{.font_icon | default "Font Awesome 5 Free"}}';
+{{ end }}
+
+// Tamaños h1,h2,h3,h4
+$h1: 60px;
+$h1-md: 50px;
+$h2: 35px;
+$h2-md: 31px;
+$h2-sm: 20px;
+$h3: 20px;
+$h4: 18px;
+
+// Tamaños .page-title .block p  (subtitulo cabecera)
+$p-size-desktop: 20px;
+$p-size-tablet: 18px;
+$p-size-mobile: 16px;
+$p-size-mobile-xs: 13px;
+
+// Custom Auto Width CSS Button Flip
+$speed: 0.5s;
+$border-color-boton-hover-verde: #066100;
+
+@import 'mixins.scss';
+
+@import 'media-query.scss';
+
+@import 'typography.scss';
+
+@import 'common.scss';
+
+@import 'main.scss';
+
+@import 'templates/_header.scss';
+
+@import 'templates/_navigation.scss';
+
+@import 'templates/_slider.scss';
+
+@import 'templates/_contact.scss';
+
+@import 'templates/_ofrecemos.scss';
+
+@import 'templates/_promociones.scss';
+
+@import 'templates/_trabajos-realizados.scss';
+
+@import 'templates/_conocenos.scss';
+
+@import 'templates/_instagram.scss';
+
+@import 'templates/_404.scss';
+
+@import 'templates/_message-sent.scss';
+
+@import 'templates/_footer.scss';
+
+@import 'custom.scss';
+
+// @import 'templates/_call-to-action.scss';
+
+// @import 'templates/_service.scss';
+
+// @import 'templates/_feature.scss';
+
+// @import 'templates/_portfolio.scss';
+
+// @import 'templates/_user-dashboard.scss';
+
+// @import 'templates/_single-post.scss';
+
+// @import 'templates/_backgrounds.scss';
+
+// @import 'templates/_blog-sidebar.scss';
+
+// @import 'templates/_blog.scss';
+
+// @import 'templates/_coming-soon.scss';
+
+// @import 'templates/_shopping.scss';

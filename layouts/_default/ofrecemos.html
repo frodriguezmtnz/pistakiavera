@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+{{ partial "page-title.html" . }}
+
+{{ with .Params.ofrecemos }}
+{{ if .habilitado }}
+<section class="ofrecemos section">
+
+  {{ range .ofrecemos_item }}
+
+  <div class="container-pistakiavera">
+    <div class="row ofrecemos">
+      <div class="col-md-4">
+        <div class="ofrecemos-img">
+          <img loading="lazy" class="img-responsive" src="{{ .imagen_ofrecemos | relURL }}" width="auto" height="auto" />
+        </div>
+      </div>
+      <div class="col-md-8">
+        {{ with .titulo_ofrecemos }}<h2 class="mt-0">{{ . | markdownify }}</h2>{{ end }}
+        {{ with .texto_ofrecemos }}{{ . | $.Page.RenderString (dict "display" "block") }}{{ end }}
+          {{ with .boton_ofrecemos }}
+            {{ if .habilitado }}
+
+              <a href="{{ .enlace | relURL }}" target="_blank" rel="noopener noreferrer" class="btn btn-small mt-20" title="{{ .titulo }}" >{{ .etiqueta }}</a>
+              <!-- <a href="{{ .enlace | relURL }}" class="btn btn-small mt-20" data-front="{{ .etiqueta }}" data-back="{{ .texto_accion_hover }}" title="{{ .titulo }}" ></a> -->
+              {{ end }}
+          {{ end }}
+      </div>
+    </div>
+  </div>
+
+  {{ end }}
+
+</section>
+{{ end }}
+{{ end }}
+
+{{ end }}
