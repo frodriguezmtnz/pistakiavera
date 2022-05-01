@@ -3,9 +3,11 @@
   align-items: center;
   min-height: calc(100vh - (100px + 205px));
   @include desktop {
-    min-height: calc(100vh - (90px + 205px));
+    // min-height: calc(100vh - (90px + 205px));
+    height: 83vh;
   }
   text-align: center;
+  height: 90vh;
   h1 {
     font-size: 300px;
     font-weight: bold;

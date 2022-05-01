@@ -93,7 +93,7 @@ input[type="tel"] {
     }
   }
 
-  &:hover {
+  &:hover, &:focus {
     //background: darken($color-primary, 20%);
     background: $boton_pista_hover;
     color: $black;
@@ -252,9 +252,9 @@ input[type="tel"] {
   margin-top: 50px;
 }
 
-.btn:focus {
-  color: darken( $light, 10.9);
-}
+// .btn:focus {
+//   color: black;
+// }
 
 .w-100 {
   width: 100%;
