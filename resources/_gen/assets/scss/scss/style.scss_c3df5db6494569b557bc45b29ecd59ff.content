@@ -981,7 +981,9 @@ select option {
     margin: 20px 0;
     text-align: center; }
   .promociones .row.promociones {
-    margin: 75px 0; } }
+    margin: 75px 0; }
+  section.promociones.section {
+    padding: 0; } }
 
 .promociones .block h2 {
   padding-top: 30px;
@@ -1066,6 +1068,9 @@ select option {
   width: 100%;
   height: 100%;
   object-fit: cover; }
+
+section.trabajos.section {
+  padding: 0; }
 
 .row.mensaje {
   padding-bottom: 55px; }

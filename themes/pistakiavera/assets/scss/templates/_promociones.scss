@@ -7,7 +7,9 @@
 @include tablet{
   a.btn.btn-small.mt-10{ display: grid; }
   h2.mt-0 { margin: 20px 0; text-align: center; }
-  .promociones .row.promociones { margin: 75px 0; }  
+  .promociones .row.promociones { margin: 75px 0; }
+
+  section.promociones.section { padding: 0; }
 }
 
 .promociones{  

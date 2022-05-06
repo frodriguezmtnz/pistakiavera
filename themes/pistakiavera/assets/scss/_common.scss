@@ -312,8 +312,6 @@ input[type="tel"] {
   padding: 40px 0;
 
   @include tablet {
-    // padding-top: 30px;
-    // padding-bottom: 30px;
     padding: 40px 15px;
   }
 }
