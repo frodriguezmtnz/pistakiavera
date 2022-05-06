@@ -129,17 +129,17 @@ input[type="tel"] {
     font-size: 16px;
     vertical-align: middle;
     margin-right: 5px; }
-  .btn-main:hover, .btn-small:hover, .btn-transparent:hover {
+  .btn-main:hover, .btn-small:hover, .btn-transparent:hover, .btn-main:focus, .btn-small:focus, .btn-transparent:focus {
     background: white;
     color: #000000;
     border: 2px #000000 solid;
     outline: none;
     box-shadow: 0 0 0 4px #eee;
     transition: 0.5s; }
-    .btn-main:hover:after, .btn-small:hover:after, .btn-transparent:hover:after {
+    .btn-main:hover:after, .btn-small:hover:after, .btn-transparent:hover:after, .btn-main:focus:after, .btn-small:focus:after, .btn-transparent:focus:after {
       opacity: 1;
       transform: translateY(0) rotateX(0); }
-    .btn-main:hover:before, .btn-small:hover:before, .btn-transparent:hover:before {
+    .btn-main:hover:before, .btn-small:hover:before, .btn-transparent:hover:before, .btn-main:focus:before, .btn-small:focus:before, .btn-transparent:focus:before {
       opacity: 0;
       transform: translateY(50%) rotateX(90deg); }
 
@@ -224,9 +224,6 @@ input[type="tel"] {
 
 .mt-50 {
   margin-top: 50px; }
-
-.btn:focus {
-  color: #d9d9d9; }
 
 .w-100 {
   width: 100%; }
@@ -1173,10 +1170,11 @@ p.nosotros-nombre {
   display: flex;
   align-items: center;
   min-height: calc(100vh - (100px + 205px));
-  text-align: center; }
+  text-align: center;
+  height: 90vh; }
   @media (max-width: 991px) {
     .page-404 {
-      min-height: calc(100vh - (90px + 205px)); } }
+      height: 83vh; } }
   .page-404 h1 {
     font-size: 300px;
     font-weight: bold; }

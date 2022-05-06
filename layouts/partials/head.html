@@ -15,7 +15,7 @@
 {{ end }}
 
 <!-- mobile responsive meta -->
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="description" content="{{ .Params.Description | default site.Params.description }}">
 {{ with site.Params.author }}
 <meta name="author" content="{{ . }}">{{ end }}
@@ -168,7 +168,7 @@
 {{ if .enable }}
 {{ with .username }}
 <script>
-  if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"{{ . }}",utcoffset:"0"}))};sessionStorage.setItem("_swa","1");
+  if(!sessionStorage.getItem("_swa")&&document.referrer.indexOf(location.protocol+"//"+location.host)!== 0){fetch("https://counter.dev/track?"+new URLSearchParams({referrer:document.referrer,screen:screen.width+"x"+screen.height,user:"{{ . }}",utcoffset:"2"}))};sessionStorage.setItem("_swa","1");
 </script>
 {{ end }}
 {{ end }}
