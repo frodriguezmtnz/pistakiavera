@@ -48,7 +48,7 @@ $p-size-mobile-xs: 13px;
 $speed: 0.5s;
 $border-color-boton-hover-verde: #066100;
 
-// @import 'mixins.scss';
+@import 'mixins.scss';
 
 @import 'media-query.scss';
 
@@ -64,8 +64,6 @@ $border-color-boton-hover-verde: #066100;
 
 @import 'templates/_slider.scss';
 
-@import 'templates/_contact.scss';
-
 @import 'templates/_ofrecemos.scss';
 
 @import 'templates/_especiales.scss';
@@ -74,15 +72,17 @@ $border-color-boton-hover-verde: #066100;
 
 @import 'templates/_conocenos.scss';
 
-@import 'templates/_instagram.scss';
-
 @import 'templates/_404.scss';
-
-@import 'templates/_message-sent.scss';
 
 @import 'templates/_footer.scss';
 
 @import 'custom.scss';
+
+// new commented unsed CSS
+// @import 'templates/_contact.scss';
+// @import 'templates/_instagram.scss';
+// @import 'templates/_message-sent.scss';
+
 
 // @import 'templates/_call-to-action.scss';
 

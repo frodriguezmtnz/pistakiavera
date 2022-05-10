@@ -1,6 +1,8 @@
 ### Hugo ###
 # Generated files by hugo
 /resources/_gen/
+resources/_gen/assets/scss/*
+*.content
 /assets/jsconfig.json
 hugo_stats.json
 
