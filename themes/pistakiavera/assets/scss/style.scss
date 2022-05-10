@@ -48,7 +48,7 @@ $p-size-mobile-xs: 13px;
 $speed: 0.5s;
 $border-color-boton-hover-verde: #066100;
 
-@import 'mixins.scss';
+// @import 'mixins.scss';
 
 @import 'media-query.scss';
 
@@ -68,7 +68,7 @@ $border-color-boton-hover-verde: #066100;
 
 @import 'templates/_ofrecemos.scss';
 
-@import 'templates/_promociones.scss';
+@import 'templates/_especiales.scss';
 
 @import 'templates/_trabajos-realizados.scss';
 

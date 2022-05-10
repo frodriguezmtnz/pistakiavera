@@ -6,8 +6,8 @@ url = "ofrecemos/"
 weight = 1
 
 [[main]]
-name = "Promociones"
-url = "promociones/"
+name = "Especiales"
+url = "especiales/"
 weight = 2
 
 [[main]]

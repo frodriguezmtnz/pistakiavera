@@ -21,11 +21,11 @@
 <!-- cookie -->
 {{ with site.Params.cookies }}
 {{ if .enable }}
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js"></script>
 <div id="js-cookie-box" class="cookie-box cookie-box-hide">
 	{{.content | markdownify}}<span id="js-cookie-button" class="btn btn-sm btn-outline-primary ms-2">{{.button}}</span>
 </div>
-<script type="application/javascript">
+<script async type="application/javascript">
 	(function ($) {
 		const cookieBox = document.getElementById('js-cookie-box');
 		const cookieButton = document.getElementById('js-cookie-button');
@@ -66,7 +66,7 @@
 <!-- font family -->
 {{$pf:= site.Params.variables.font_primary}}
 {{$sf:= site.Params.variables.font_secondary}}
-<script type="application/javascript">
+<script async type="application/javascript">
   WebFont.load({
     google: {
       api: 'https://fonts.googleapis.com/css2',

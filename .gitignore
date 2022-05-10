@@ -1,3 +1,13 @@
-resources/_gen/assets/scss/scss/style.scss_c3df5db6494569b557bc45b29ecd59ff.content
-resources/_gen/assets/*
-resources/_gen/assets/scss/scss/*
+### Hugo ###
+# Generated files by hugo
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Executable may be added to repository
+hugo.exe
+hugo.darwin
+hugo.linux
+
+# Temporary lock file while building
+/.hugo_build.lock

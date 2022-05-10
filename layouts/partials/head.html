@@ -1,11 +1,9 @@
 <meta charset="utf-8">
 <title>{{.Title | default site.Title}}</title>
-
 <!-- base url -->
 {{ if or (eq site.BaseURL "/") (eq site.BaseURL "http://localhost:1313/") (eq site.BaseURL "http://examplesite.org/") (eq site.BaseURL "https://examplesite.org/") (eq site.BaseURL "http://examplesite.com/") (eq site.BaseURL "https://examplesite.com/")}}{{else}}
 <base href="{{ .Permalink }}">
 {{ end }}
-
 <!-- multilingual SEO optimizations -->
 {{ if .IsTranslated }}
 {{ range .AllTranslations }}
@@ -13,7 +11,6 @@
 {{ end }}
 <link rel="alternate" hreflang="x-default" href="{{ .RelPermalink | absLangURL }}">
 {{ end }}
-
 <!-- mobile responsive meta -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <meta name="description" content="{{ .Params.Description | default site.Params.description }}">
@@ -53,7 +50,7 @@
 {{ end }}
 <link rel="manifest" href="{{`manifest.webmanifest` | relURL }}">
 <meta name="msapplication-TileColor" content="{{site.Params.variables.color_primary | default `#da532c`}}">
-<meta name="theme-color" content="{{site.Params.variables.body_color | default `#ffffff` }}">
+<meta name="theme-color" content="{{site.Params.variables.theme_color | default `#ffffff` }}">
 
 
 <!-- Open Graph image and Twitter Card meta-data -->
@@ -78,8 +75,7 @@
   content="image/{{ if eq $image_ext `svg` }}svg+xml{{ else }}{{ replaceRE `^jpg$` `jpeg` $image_ext }}{{ end }}">
 {{ end }}
 <meta name="twitter:title" content="{{ with .Title }}{{ . }}{{ else }}{{ site.Title }}{{ end }}" />
-<meta name="twitter:description"
-  content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+<meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
 {{ with site.Social.twitter }}
 <meta name="twitter:site" content="@{{ . }}" />{{ end }}
 {{ range site.Authors }}
@@ -88,10 +84,8 @@
 {{ end }}
 
 {{ template "_internal/opengraph.html" . }}
-
 <!-- google analytics -->
 {{ template "_internal/google_analytics.html" . }}
-
 <!-- google tag manager -->
 {{ with site.Params.google_tag_manager }}
 <script>

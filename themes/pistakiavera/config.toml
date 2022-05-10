@@ -19,6 +19,7 @@ white = "#ffffff"
 light = "#f5f5f5"
 boton_pista_primary = "black"
 boton_pista_hover = "white"
+theme_color = "#bb3b3b"
 
 # font variables
 # base font size for full website, 

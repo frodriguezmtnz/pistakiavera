@@ -97,6 +97,12 @@ galeria:
       link_foto:      "#"
       link_title:     "Foto 13 - Trabajo realizado de Pistakiavera"
 
+    - titulo_trabajo: "Pistakiavera___14"      
+      imagen_trabajo: "images/trabajos-fotos/trabajo-realizado-pistakiavera-14.jpg"
+      alt_trabajo:    "foto 14 trabajo de pistakiavera"
+      link_foto:      "#"
+      link_title:     "Foto 14 - Trabajo realizado de Pistakiavera"      
+
 # TODO: Hacer una galería simple de fotos. ESTA -> https://codepen.io/cycosta/pen/wvMeNoJ
 
 # Que se vea la foto y una descripción no muy larga (mini frase).

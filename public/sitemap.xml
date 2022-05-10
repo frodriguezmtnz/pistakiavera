@@ -4,16 +4,10 @@
   <url>
     <loc>http://example.org/</loc>
   </url><url>
-    <loc>http://example.org/message_sent/</loc>
-  </url><url>
-    <loc>http://example.org/categories/</loc>
-  </url><url>
     <loc>http://example.org/conocenos/</loc>
   </url><url>
-    <loc>http://example.org/promociones/</loc>
+    <loc>http://example.org/especiales/</loc>
   </url><url>
     <loc>http://example.org/ofrecemos/</loc>
-  </url><url>
-    <loc>http://example.org/tags/</loc>
   </url>
 </urlset>

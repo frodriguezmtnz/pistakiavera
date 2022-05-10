@@ -1,18 +1,18 @@
-.row.promociones { margin: 60px 0; }
-// .section-promociones { padding: 30px 0;height: 70vh; }
-// .promociones.section { padding: 30px 0;height: 70vh; }
+.row.especiales { margin: 60px 0; }
+// .section-especiales { padding: 30px 0;height: 70vh; }
+// .especiales.section { padding: 30px 0;height: 70vh; }
 
 // Se aplica SOLO para tablet y moviles
 // ------------------------------------
 @include tablet{
   a.btn.btn-small.mt-10{ display: grid; }
   h2.mt-0 { margin: 20px 0; text-align: center; }
-  .promociones .row.promociones { margin: 75px 0; }
+  .especiales .row.especiales { margin: 75px 0; }
 
-  section.promociones.section { padding: 0; }
+  section.especiales.section { padding: 0; }
 }
 
-.promociones{  
+.especiales{  
   .block{
     h2 {
       padding-top: 30px;
@@ -30,7 +30,7 @@
     }
   }
 
-.promociones-img {
+.especiales-img {
     overflow:hidden;
 
     &:hover img {

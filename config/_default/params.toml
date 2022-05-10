@@ -5,7 +5,8 @@ favicon = "images/favicon.png"
 logo = "images/pistakiavera-logo.svg"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
-logo_width = "205px"
+logo_width = "205"
+logo_height = "50"
 # logo text will only show when logo is missing.
 logo_text = "Pistakiavera ® | Believe it!"
 # navbar fixed to top
@@ -79,12 +80,12 @@ analytics_id = "" # Your ID
 
 # plausible analytics: see https://plausible.io/
 # how-to -> https://plausible.io/docs/hugo-integration
-# TODO: Configurar sistema de analítica web
 [plausible]
 enable = false
 domain = "#" # yourdomain.com
 
 # counter analytics: see https://counter.dev/setup.html
+# HECHO: Usando esta APP de analítica free.
 [counter]
 enable = true
 username = "FeliDev" # your username counter.dev
