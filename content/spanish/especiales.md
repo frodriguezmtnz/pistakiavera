@@ -38,7 +38,7 @@ especiales:
     ###### Repostería a tu medida - especiales item loop ######
     #############################################################
     - titulo_especiales: "Repostería a tu medida"
-      imagen_especiales: "images/especiales/tartas-chuches-pistakiavera.jpg"
+      imagen_especiales: "images/especiales/reposteria-a-medida-pistakiavera.jpg"
       texto_especiales:  "¿Una tarta con forma de bolso? ¿Una mesa dulce temática? ¿Una tarta de chuches para los más peques? Cualquier cosa es posible, deja que en Pistakiavera te ayudemos con ello."
 
       boton_especiales:
