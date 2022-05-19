@@ -90,6 +90,10 @@ domain = "#" # yourdomain.com
 enable = true
 username = "FeliDev" # your username counter.dev
 
+# Typer.js https://steven.codes/typerjs/
+[typer]
+enable = true
+
 # site verifications
 [site_verification]
 google = "" # Your verification code
