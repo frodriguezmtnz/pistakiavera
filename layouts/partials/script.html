@@ -68,8 +68,8 @@
 <!-- Typer js -->
 {{ with site.Params.typer }}
 {{ if .enable }}
-{{ if $.Page.IsHome }}
-<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+{{ if .Site.BaseUrl }}
+	<script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
 {{ end }}
 {{ end }}
 {{ end }}
