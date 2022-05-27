@@ -1,4 +1,5 @@
 ---
+# homepagesection: true
 #######  Pistakiavera HOME #######
 banner:
   enable: true
