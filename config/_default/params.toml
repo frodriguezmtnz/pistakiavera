@@ -90,6 +90,12 @@ domain = "#" # yourdomain.com
 enable = true
 username = "FeliDev" # your username counter.dev
 
+# Hotjar Heatmap Tracking
+# https://help.hotjar.com/hc/en-us/articles/115009336727-How-to-Install-your-Hotjar-Tracking-Code#manually-adding-the-code-to-your-website
+[hotjar]
+enable = true
+hjid = 3030710
+
 # Typer.js https://steven.codes/typerjs/
 [typer]
 enable = true
